@@ -1,0 +1,25 @@
+{
+  "name": "corelith-portfolio",
+  "version": "1.0.0",
+  "description": "Secure collaborative portfolio repository with encrypted project management",
+  "main": "scripts/init-project.sh",
+  "scripts": {
+    "init": "bash scripts/init-project.sh",
+    "encrypt": "node scripts/encrypt.js",
+    "decrypt": "node scripts/decrypt.js",
+    "generate-key": "node scripts/generate-key.js",
+    "validate": "node scripts/validate-owner.js"
+  },
+  "keywords": [
+    "portfolio",
+    "projects",
+    "encryption",
+    "security",
+    "github"
+  ],
+  "author": "Corelith Technologies",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
