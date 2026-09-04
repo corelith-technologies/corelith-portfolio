@@ -2,7 +2,7 @@
 
 A secure, collaborative portfolio repository where developers and creators can showcase their individual projects. Each project is protected by encryption, and only the project owner has full control over their project data.
 
-## 🎯 Features
+## Features
 
 - **Individual Project Control**: Each project owner has complete control over their project
 - **Encrypted Privacy**: Sensitive project data is encrypted using GitHub Secrets
@@ -12,7 +12,7 @@ A secure, collaborative portfolio repository where developers and creators can s
 - **Version Control**: Complete git history of all changes
 - **No External Dependencies**: Everything runs on GitHub
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 corelith-portfolio/
@@ -37,7 +37,7 @@ corelith-portfolio/
 └── OWNER_GUIDE.md (this file)
 ```
 
-## 🚀 Quick Start for Project Owners
+## Quick Start for Project Owners
 
 ### Step 1: Create Your Project Key
 
@@ -119,12 +119,12 @@ git push origin main
 ```
 
 GitHub Actions will automatically:
-1. ✅ Validate that you're the project owner
-2. ✅ Encrypt your `project.json` file
-3. ✅ Commit the encrypted version
-4. ✅ Update the repository
+1.  Validate that you're the project owner
+2.  Encrypt your `project.json` file
+3.  Commit the encrypted version
+4.  Update the repository
 
-## 🔐 Security & Encryption
+##  Security & Encryption
 
 ### How Encryption Works
 
@@ -150,7 +150,7 @@ You'll be prompted for your key, and the decrypted data will be displayed.
 3. Re-encrypt and commit
 4. GitHub Actions will handle the rest
 
-## 👥 Project Ownership
+##  Project Ownership
 
 Each project has a `.owner` file that contains:
 
@@ -165,7 +165,7 @@ Each project has a `.owner` file that contains:
 
 **Only the owner listed in this file can modify the project.**
 
-## 🛠️ Available Commands
+##  Available Commands
 
 ### Initialize a new project
 ```bash
@@ -192,7 +192,7 @@ node scripts/validate-owner.js projectname
 node scripts/generate-key.js
 ```
 
-## 📋 Checklist for New Projects
+##  Checklist for New Projects
 
 - [ ] Generated a secure key
 - [ ] Added key to GitHub Secrets as `PROJECT_[name]_KEY`
@@ -203,7 +203,7 @@ node scripts/generate-key.js
 - [ ] Verified GitHub Actions completed successfully
 - [ ] Verified `.owner` file was created with your username
 
-## ⚠️ Important Notes
+##  Important Notes
 
 1. **Never commit your encryption key** - it should only exist in GitHub Secrets
 2. **Keep your key secure** - losing it means you lose access to your project data
@@ -211,7 +211,7 @@ node scripts/generate-key.js
 4. **Only you can modify** - GitHub Actions validates ownership before encrypting
 5. **Encrypted files are in git** - but only decryptable with your key
 
-## 🆘 Troubleshooting
+##  Troubleshooting
 
 ### "Permission Denied" Error
 - Verify you're listed in the `.owner` file
@@ -228,17 +228,17 @@ node scripts/generate-key.js
 - Verify the secret name matches exactly
 - Ensure `project.json` exists in your project folder
 
-## 📞 Support
+##  Support
 
 For issues or questions:
 1. Check the troubleshooting section
 2. Review the GitHub Actions logs
 3. Contact the repository administrators
 
-## 📄 License
+##  License
 
 This portfolio is maintained by Corelith Technologies.
 
 ---
 
-**Happy building! 🚀**
+Happy building! 
